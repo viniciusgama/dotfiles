@@ -16,3 +16,4 @@ set expandtab
 filetype plugin on
 filetype indent on
 
+let NERDTreeShowHidden=1

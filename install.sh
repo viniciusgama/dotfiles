@@ -3,7 +3,7 @@ set -e
 DOTFILES_ROOT=$(pwd)
 
 install_dotfiles () {
-  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -type f \( -iname ".*" ! -iname "*.swp" \) -exec basename {} \;)
+  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 \( -iname ".*" ! -iname "*.swp" \) -exec basename {} \;)
   do
     dst="$HOME/$src"
     echo "source $(pwd)/$src"

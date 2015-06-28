@@ -16,3 +16,4 @@ install_dotfiles () {
 install_dotfiles
 
 . ~/.bashrc
+vim +PluginInstall +qall

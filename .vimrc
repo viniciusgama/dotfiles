@@ -31,9 +31,16 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+set history=1000 " Remember more commands and search history
+set undolevels=1000 " Use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title " Change the terminal's title
+set visualbell " Don't beep
+set noerrorbells " Don't beep
 
 " NERDTree configuration
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.swp$', '\.git$']
 
 " Solarized colors configuration
 syntax enable

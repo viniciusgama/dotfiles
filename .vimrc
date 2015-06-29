@@ -20,8 +20,10 @@ Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
-" Configuration
-set number
+" My configuration
+set hidden " It hides buffers instead of closing them
+set number " Always show line numbers
+set showmatch " Set show matching parenthesis
 set autoindent
 set smartindent
 set smarttab

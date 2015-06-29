@@ -1,22 +1,24 @@
 set nocompatible
-filetype off "required
+filetype off
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/vundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
+" Let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
+
+" Plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()
+filetype plugin indent on
 
-syntax on
-
+" Configuration
 set number
 set autoindent
 set smartindent
@@ -26,7 +28,10 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-filetype plugin on
-filetype indent on
-
+" NERDTree configuration
 let NERDTreeShowHidden=1
+
+" Solarized colors configuration
+syntax enable
+set background=dark
+colorscheme solarized

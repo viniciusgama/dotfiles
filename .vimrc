@@ -15,6 +15,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -40,7 +41,7 @@ set noerrorbells " Don't beep
 
 " NERDTree configuration
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', '\.git$']
+let NERDTreeIgnore = ['\.swp$', '\.git$', '\.tmp$']
 
 " Solarized colors configuration
 syntax enable

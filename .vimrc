@@ -41,7 +41,7 @@ set noerrorbells " Don't beep
 
 " NERDTree configuration
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', '\.git$', '\.tmp$']
+let NERDTreeIgnore = ['\.swp$', '\.git$', '\.tmp$', '\.DS_Store$']
 
 " Solarized colors configuration
 syntax enable

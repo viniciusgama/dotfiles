@@ -3,3 +3,6 @@
   name = Vinicius Gama
 [format]
   pretty = format:%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset
+[alias]
+  st = status
+  cm = commit 
